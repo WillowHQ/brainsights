@@ -43,7 +43,7 @@ class HeaderComponent extends Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">React Contacts</a>
+            <a href="#">Brainsights</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
