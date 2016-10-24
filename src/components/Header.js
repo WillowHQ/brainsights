@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavItem, Header, Brand } from 'react-bootstrap';
+import { Link } from 'react-router';
+import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Header, Brand } from 'react-bootstrap';
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
+import Contacts from './Contacts.js';
 
 class HeaderComponent extends Component {
 
@@ -12,6 +14,11 @@ class HeaderComponent extends Component {
     }
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
+  }
+
+  handleSelect(eventKey) {
+    event.preventDefault();
+    alert(`selected ${eventKey}`);
   }
 
   login() {
@@ -41,17 +48,28 @@ class HeaderComponent extends Component {
   render() {
     return (
       <Navbar>
+
         <Navbar.Header>
+
           <Navbar.Brand>
             <a href="#">Brainsights</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
+
+
           { !this.state.authenticated ? (
             <NavItem onClick={this.login}>Login</NavItem>
           ) : (
             <NavItem onClick={this.logout}>Logout</NavItem>
           )}
+          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
+            <Contacts />
+
+          </NavDropdown>
+
+
+
         </Nav>
       </Navbar>
     );
