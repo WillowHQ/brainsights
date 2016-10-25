@@ -4,6 +4,7 @@ import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Header, Brand } from 'reac
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
 import Contacts from './Contacts.js';
+import Contacts1 from './Contacts1.js';
 
 class HeaderComponent extends Component {
 
@@ -64,7 +65,7 @@ class HeaderComponent extends Component {
             <NavItem onClick={this.logout}>Logout</NavItem>
           )}
           <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
-            <Contacts />
+            <Contacts1 />
 
           </NavDropdown>
 

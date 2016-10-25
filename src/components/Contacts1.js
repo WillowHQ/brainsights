@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ListGroup } from 'react-bootstrap';
-// import { Link } from 'react-router';
+import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Link } from 'react-router';
 import ContactActions from '../actions/ContactActions';
 import ContactStore from '../stores/ContactStore';
 import ContactListItem from './ContactListItem';
@@ -15,7 +15,7 @@ function getContactListItem(contact) {
     />
   );
 }
-class ContactsComponent extends Component {
+class Contacts1Component extends Component {
 
   constructor() {
     super();
@@ -48,19 +48,31 @@ class ContactsComponent extends Component {
   }
 
   render() {
-    let contactListItems;
-    if (this.state.contacts) {
-      // Map over the contacts and get an element for each of them
-      contactListItems = this.state.contacts.map(contact => getContactListItem(contact));
-    }
+
     return (
       <div>
         <ListGroup>
-          {contactListItems}
+          <ListGroupItem><Link to={`/administration`}>
+            <h4>Administration</h4>
+          </Link></ListGroupItem>
+
+          <ListGroupItem><Link to={`/content`}>
+            <h4>Content</h4>
+          </Link></ListGroupItem>
+
+          <ListGroupItem><Link to={`/data`}>
+            <h4>Data</h4>
+          </Link></ListGroupItem>
+
+          <ListGroupItem><Link to={`/analysis`}>
+            <h4>Analysis</h4>
+          </Link></ListGroupItem>
+
+
         </ListGroup>
       </div>
     );
   }
 }
 
-export default ContactsComponent;
+export default Contacts1Component;
