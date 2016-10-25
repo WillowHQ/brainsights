@@ -3,17 +3,17 @@ import React, { Component } from 'react';
 import Sidebar1 from './Sidebar1.js';
 
 
-class AnalysisMainComponent extends Component {
+class ContentMainComponent extends Component {
 
 
   render() {
 
     return (
       <div>
-        <p> Analysis Main Component</p>
+        <p> Content Main Component</p>
       </div>
     );
   }
 }
 
-export default AnalysisMainComponent;
+export default ContentMainComponent;
