@@ -5,10 +5,9 @@ import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import AnalysisNav from './AnalysisNav';
 
-import Sidebar1 from './Sidebar1.js';
 
 
-class AnalysisMainComponent extends Component {
+class AnalysisQueryComponent extends Component {
 
 
   render() {
@@ -26,11 +25,11 @@ class AnalysisMainComponent extends Component {
 
             </Col>
           </Row>
-       </Grid>
-        <p> Analysis Main Component</p>
+        </Grid>
+        <p> Analysis Query Component</p>
       </div>
     );
   }
 }
 
-export default AnalysisMainComponent;
+export default AnalysisQueryComponent;

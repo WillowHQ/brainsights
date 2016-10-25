@@ -6,6 +6,8 @@ import ContactDetail1 from './components/ContactDetail1';
 import ContentMain from './components/ContentMain';
 import DataMain from './components/DataMain';
 import AnalysisMain from './components/AnalysisMain';
+import AnalysisQuery from './components/AnalysisQuery';
+
 
 import App from './components/App';
 
@@ -24,6 +26,8 @@ class Root extends Component {
           <Route path='/content' component={ContentMain} />
           <Route path='/data' component={DataMain} />
           <Route path='/analysis' component={AnalysisMain} />
+          <Route path='/analysis/query' component={AnalysisQuery} />
+
         </Route>
       </Router>
     );
