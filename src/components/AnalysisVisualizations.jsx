@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import AnalysisNav from './AnalysisNav';
 
-import Sidebar1 from './Sidebar1.js';
+
 
 
 class AnalysisVisualizationsComponent extends Component {

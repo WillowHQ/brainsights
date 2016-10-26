@@ -4,7 +4,7 @@ import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Header, Brand } from 'reac
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
 import Contacts from './Contacts.js';
-import Contacts1 from './Contacts1.js';
+import Contacts1 from './MainNav.js';
 
 class HeaderComponent extends Component {
 

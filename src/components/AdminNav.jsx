@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router';
-import ContactActions from '../actions/ContactActions';
-import ContactStore from '../stores/ContactStore';
-import ContactListItem from './ContactListItem';
 
 class AdminNavComponent extends Component {
   render() {
