@@ -5,22 +5,22 @@ import ContactActions from '../actions/ContactActions';
 import ContactStore from '../stores/ContactStore';
 import ContactListItem from './ContactListItem';
 
-class AnalysisNavComponent extends Component {
+class DataNavComponent extends Component {
   render() {
 
     return (
       <div>
         <ListGroup>
-          <ListGroupItem><Link to={`/analysis`}>
+          <ListGroupItem><Link to={`/data`}>
             <h4>Home</h4>
           </Link></ListGroupItem>
 
-          <ListGroupItem><Link to={`/analysis/query`}>
-            <h4>Queries</h4>
+          <ListGroupItem><Link to={`/data/submit`}>
+            <h4>Submit</h4>
           </Link></ListGroupItem>
 
-          <ListGroupItem><Link to={`/analysis/visualizations`}>
-            <h4>Visualizations</h4>
+          <ListGroupItem><Link to={`/data/manage`}>
+            <h4>Manage</h4>
           </Link></ListGroupItem>
 
 
@@ -32,4 +32,4 @@ class AnalysisNavComponent extends Component {
   }
 }
 
-export default AnalysisNavComponent;
+export default DataNavComponent;

@@ -8,7 +8,7 @@ import DataNav from './DataNav';
 
 
 
-class DataMainComponent extends Component {
+class DataSubmitComponent extends Component {
 
 
   render() {
@@ -23,7 +23,7 @@ class DataMainComponent extends Component {
 
             </Col>
             <Col xs={12} md={9}>
-              <p> Data Main Component</p>
+              <p> Data Submit Component</p>
             </Col>
           </Row>
         </Grid>
@@ -33,5 +33,4 @@ class DataMainComponent extends Component {
   }
 }
 
-export default DataMainComponent;
-
+export default DataSubmitComponent;

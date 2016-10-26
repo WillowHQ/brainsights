@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import AnalysisNav from './AnalysisNav';
 
-import Sidebar1 from './Sidebar1.js';
+
 
 
 class AnalysisMainComponent extends Component {
@@ -23,11 +23,11 @@ class AnalysisMainComponent extends Component {
 
             </Col>
             <Col xs={12} md={9}>
-
+              <p> Analysis Main Component</p>
             </Col>
           </Row>
        </Grid>
-        <p> Analysis Main Component</p>
+
       </div>
     );
   }

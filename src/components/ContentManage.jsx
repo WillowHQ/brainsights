@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import DataNav from './DataNav';
+import ContentNav from './ContentNav';
 
 
 
 
-class DataMainComponent extends Component {
+class ContentManageComponent extends Component {
 
 
   render() {
@@ -18,12 +18,12 @@ class DataMainComponent extends Component {
         <Grid>
           <Row>
             <Col xs={12} md={3}>
-              <DataNav />
+              <ContentNav />
 
 
             </Col>
             <Col xs={12} md={9}>
-              <p> Data Main Component</p>
+              <p> Content Manage Component</p>
             </Col>
           </Row>
         </Grid>
@@ -33,5 +33,4 @@ class DataMainComponent extends Component {
   }
 }
 
-export default DataMainComponent;
-
+export default ContentManageComponent;

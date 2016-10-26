@@ -57,17 +57,17 @@ class HeaderComponent extends Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
+          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
+            <Contacts1 />
 
+          </NavDropdown>
 
           { !this.state.authenticated ? (
             <NavItem onClick={this.login}>Login</NavItem>
           ) : (
             <NavItem onClick={this.logout}>Logout</NavItem>
           )}
-          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
-            <Contacts1 />
 
-          </NavDropdown>
 
 
 

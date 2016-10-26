@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import DataNav from './DataNav';
+import AdminNav from './AdminNav';
 
 
 
 
-class DataMainComponent extends Component {
+class AdminAuditComponent extends Component {
 
 
   render() {
@@ -18,12 +18,12 @@ class DataMainComponent extends Component {
         <Grid>
           <Row>
             <Col xs={12} md={3}>
-              <DataNav />
+              <AdminNav />
 
 
             </Col>
             <Col xs={12} md={9}>
-              <p> Data Main Component</p>
+              <p> Admin Audits Component</p>
             </Col>
           </Row>
         </Grid>
@@ -33,5 +33,4 @@ class DataMainComponent extends Component {
   }
 }
 
-export default DataMainComponent;
-
+export default AdminAuditComponent;
