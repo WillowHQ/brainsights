@@ -3,8 +3,7 @@ import { Link } from 'react-router';
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Header, Brand } from 'react-bootstrap';
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
-import Contacts from './Contacts.js';
-import Contacts1 from './MainNav.js';
+import MainNav from './MainNav';
 
 class HeaderComponent extends Component {
 
@@ -58,7 +57,7 @@ class HeaderComponent extends Component {
         </Navbar.Header>
         <Nav>
           <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
-            <Contacts1 />
+            <MainNav />
 
           </NavDropdown>
 
