@@ -8,15 +8,15 @@ class AdminNavComponent extends Component {
     return (
       <div>
         <ListGroup>
-          <ListGroupItem><Link to={`/administration`}>
+          <ListGroupItem><Link to={'/administration'}>
             <h4>Home</h4>
           </Link></ListGroupItem>
 
-          <ListGroupItem><Link to={`/administration/accounts`}>
+          <ListGroupItem><Link to={'/administration/accounts'}>
             <h4>Accounts</h4>
           </Link></ListGroupItem>
 
-          <ListGroupItem><Link to={`/administration/audit`}>
+          <ListGroupItem><Link to={'/administration/audit'}>
             <h4>Audit</h4>
           </Link></ListGroupItem>
 
