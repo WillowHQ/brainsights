@@ -4,18 +4,18 @@ import Index from './components/Index';
 
 
 
-import DataMain from './components/DataMain';
-import AnalysisMain from './components/AnalysisMain';
-import AnalysisQuery from './components/AnalysisQuery';
-import AnalysisVisualizations from './components/AnalysisVisualizations';
-import DataManage from './components/DataManage';
-import DataSubmit from './components/DataSubmit';
-import ContentMain from './components/ContentMain';
-import ContentSubmit from './components/ContentSubmit';
-import ContentManage from './components/ContentManage';
-import AdminAccounts from './components/AdminAccounts';
-import AdminAudit from './components/AdminAudit';
-import AdminMain from './components/AdminMain';
+import DataMain from './components/data/DataMain';
+import AnalysisMain from './components/analysis/AnalysisMain';
+import AnalysisQuery from './components/analysis/AnalysisQuery';
+import AnalysisVisualizations from './components/analysis/AnalysisVisualizations';
+import DataManage from './components/data/DataManage';
+import DataSubmit from './components/data/DataSubmit';
+import ContentMain from './components/content/ContentMain';
+import ContentSubmit from './components/content/ContentSubmit';
+import ContentManage from './components/content/ContentManage';
+import AdminAccounts from './components/admin/AdminAccounts';
+import AdminAudit from './components/admin/AdminAudit';
+import AdminMain from './components/admin/AdminMain';
 import App from './components/App';
 
 class Root extends Component {
