@@ -27,9 +27,9 @@ class Root extends Component {
       <Router history={this.props.history}>
         <Route path='/' component={App}>
           <IndexRoute component={Index}/>
-          <Route path='/contact/:id' component={ContactDetail} />
-          <Route path='/administration' component={AdminMain} />
-          <Route path='/content' component={ContentMain} />
+
+
+
 
           <Route path='/analysis' component={AnalysisMain} />
           <Route path='/analysis/query' component={AnalysisQuery} />
@@ -39,6 +39,7 @@ class Root extends Component {
           <Route path='/data/manage' component={DataManage} />
           <Route path='/data/submit' component={DataSubmit} />
 
+          <Route path='/administration' component={AdminMain} />
           <Route path='/admininstration/accounts' component={AdminAccounts}  />
           <Route path='/admininstration/audit' component={AdminAudit} />
 
