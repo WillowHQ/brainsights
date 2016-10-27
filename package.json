@@ -13,7 +13,9 @@
     "start": "node server/index.js",
     "deploy": "gcloud app deploy app.yaml"
   },
-  "author": "Auth0",
+   "engines": {
+    "node": "~=4.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-eslint": "^6.0.0",
