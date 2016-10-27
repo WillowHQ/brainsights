@@ -1,2 +1,4 @@
+module: default
 runtime: nodejs
 vm: true
+threadsafe: true
