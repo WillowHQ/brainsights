@@ -3,7 +3,7 @@ import Koa from "koa";
 import serve from "koa-static";
 import mount from "koa-mount";
 
-const PORT = process.env.port || 8080;
+const PORT = process.env.port || 8000;
 const PATH_DIST = path.resolve(__dirname, '../dist');
 const app = new Koa();
 
