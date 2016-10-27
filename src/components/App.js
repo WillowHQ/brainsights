@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-
 import React, { Component } from 'react';
 import Header from './Header';
 import injectTapEventPlugin from 'react-tap-event-plugin';
