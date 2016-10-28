@@ -14,7 +14,7 @@
     "deploy": "gcloud app deploy app.yaml"
   },
   "engines": {
-    "node": "~=4.6.1"
+    "node": "~=6.9.1"
   },
   "devDependencies": {
     "bower-webpack-plugin": "^0.1.9",
