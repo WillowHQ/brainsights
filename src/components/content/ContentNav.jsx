@@ -8,7 +8,7 @@ class ContentNavComponent extends Component {
 
     return (
       <div>
-        <ListGroup>
+        <ListGroup margin-left={0}>
           <ListGroupItem><Link to={`/content`}>
             <h4>Home</h4>
           </Link></ListGroupItem>

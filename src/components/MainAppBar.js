@@ -8,7 +8,7 @@ import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
 import MainNav from './MainNav';
 
-class HeaderComponent extends Component {
+class MainAppBarComponent extends Component {
 
   constructor() {
     super();
@@ -50,34 +50,13 @@ class HeaderComponent extends Component {
 
   render() {
     return (
-      <Navbar>
+      <AppBar
+        title="Title"
+        iconClassNameRight="muidocs-icon-navigation-expand-more"
 
-        <Navbar.Header>
-
-          <Navbar.Brand>
-            <a href="#">Brainsights</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
-            <MainNav />
-
-          </NavDropdown>
-
-          { !this.state.authenticated ? (
-            <NavItem onClick={this.login}>Login</NavItem>
-          ) : (
-            <NavItem onClick={this.logout}>Logout</NavItem>
-          )}
-
-
-
-
-        </Nav>
-      </Navbar>
-
-    );
-  }
+      />
+      )
+  };
 }
 
-export default HeaderComponent;
+export default MainAppBarComponent;
