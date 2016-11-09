@@ -1,7 +1,7 @@
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import React, { Component } from 'react';
@@ -14,8 +14,16 @@ import MainAppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+
 import { Link } from 'react-router';
+import {List, ListItem} from 'material-ui/List';
+import AdminIcon from 'material-ui/svg-icons/content/inbox';
+import DataIcon from 'material-ui/svg-icons/action/grade';
+import ContentIcon from 'material-ui/svg-icons/content/send';
+import AnalysisIcon from 'material-ui/svg-icons/content/drafts';
+
+
+
 
 
 
@@ -63,27 +71,32 @@ class AppComponent extends Component {
           open={this.state.open}
           docked={false}
           >
-          <MenuItem onTouchTap={this.handleClose}> </MenuItem>
-          <MenuItem onTouchTap={this.handleClose}> >Menu Item 2</MenuItem>
-          <ListGroup>
-          <ListGroupItem onTouchTap={this.handleClose}><Link to={`/administration`}>
-            <h4>Administration</h4>
-          </Link></ListGroupItem>
+          <List>
+            <ListItem  leftIcon={<AdminIcon />} onTouchTap={this.handleClose}>
+              <Link to={`/administration`}>
+              <b>Administration</b>
+              </Link>
+            </ListItem>
+            <ListItem leftIcon={<DataIcon />} onTouchTap={this.handleClose}>
+              <Link to={`/content`}>
+                <b>Content</b>
+              </Link>
+            </ListItem>
+            <ListItem  leftIcon={<ContentIcon />} onTouchTap={this.handleClose}>
+              <Link to={`/data`}>
+                <b>Data</b>
+              </Link>
+            </ListItem>
+            <ListItem leftIcon={<AnalysisIcon />} onTouchTap={this.handleClose}>
+              <Link to={`/analysis`}>
+                <b>Analysis</b>
+              </Link>
+            </ListItem>
 
-          <ListGroupItem onTouchTap={this.handleClose}><Link to={`/content`}>
-            <h4>Content</h4>
-          </Link></ListGroupItem>
-
-          <ListGroupItem onTouchTap={this.handleClose}><Link to={`/data`}>
-            <h4>Data</h4>
-          </Link></ListGroupItem>
-
-          <ListGroupItem onTouchTap={this.handleClose}><Link to={`/analysis`}>
-            <h4>Analysis</h4>
-          </Link></ListGroupItem>
+          </List>
 
 
-        </ListGroup>
+
         </Drawer>
 
               {this.props.children}
