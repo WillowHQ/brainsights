@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { List, ListItem } from 'material-ui/List';
 import { Link } from 'react-router';
 
 
@@ -7,24 +7,24 @@ class ContentNavComponent extends Component {
   render() {
 
     return (
-      <div>
-        <ListGroup margin-left={0}>
-          <ListGroupItem><Link to={`/content`}>
+      <div margin-left={0}>
+        <List margin-left={0}>
+          <ListItem><Link to={`/content`}>
             <h4>Home</h4>
-          </Link></ListGroupItem>
+          </Link></ListItem>
 
-          <ListGroupItem><Link to={`/content/submit`}>
+          <ListItem><Link to={`/content/submit`}>
             <h4>Submit</h4>
-          </Link></ListGroupItem>
+          </Link></ListItem>
 
-          <ListGroupItem><Link to={`/content/manage`}>
+          <ListItem><Link to={`/content/manage`}>
             <h4>Manage</h4>
-          </Link></ListGroupItem>
+          </Link></ListItem>
 
 
 
 
-        </ListGroup>
+        </List>
       </div>
     );
   }

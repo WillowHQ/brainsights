@@ -18,13 +18,15 @@ class ContentMainComponent extends Component {
     return (
       <div>
 
-            <Col  md={3} >
-              <ContentNav />
-            </Col>
-            <Col  md={9}>
-              <p> Content Main Component</p>
-            </Col>
 
+
+         <div id="left" style="float: left; width: 150px; background: #DDDDDD; height: 500px;">
+        <ContentNav />
+    </div>
+
+    <div id="right" style="float: left; background: #EEEEEE;">
+        <p> Content Main Component</p>
+    </div>
       </div>
     );
   }

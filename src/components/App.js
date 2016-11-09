@@ -5,7 +5,7 @@ import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import React, { Component } from 'react';
-import Header from './Header';
+//import Header from './Header';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import AppBar from 'material-ui/AppBar';
 import MainAppBar from 'material-ui/AppBar';
