@@ -13,23 +13,7 @@ class AdminAccountsComponent extends Component {
 
   render() {
 
-    return (
-      <div>
-        <Grid>
-          <Row>
-            <Col xs={12} md={3}>
-              <AdminNav />
 
-
-            </Col>
-            <Col xs={12} md={9}>
-              <p> Admin Accounts Component</p>
-            </Col>
-          </Row>
-        </Grid>
-
-      </div>
-    );
   }
 }
 

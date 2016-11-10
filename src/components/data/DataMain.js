@@ -15,8 +15,7 @@ class DataMainComponent extends Component {
 
     return (
       <div>
-        <Grid>
-          <Row>
+
             <Col xs={12} md={3}>
               <DataNav />
 
@@ -25,8 +24,7 @@ class DataMainComponent extends Component {
             <Col xs={12} md={9}>
               <p> Data Main Component</p>
             </Col>
-          </Row>
-        </Grid>
+
 
       </div>
     );

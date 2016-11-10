@@ -17,23 +17,14 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import { Link } from 'react-router';
 import {List, ListItem} from 'material-ui/List';
-import AdminIcon from 'material-ui/svg-icons/content/inbox';
-import DataIcon from 'material-ui/svg-icons/action/grade';
-import ContentIcon from 'material-ui/svg-icons/content/send';
-import AnalysisIcon from 'material-ui/svg-icons/content/drafts';
-
-
-
-
-
-
+import ActionHome from 'material-ui/svg-icons/action/home';
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
 
-import { Grid, Row, Col } from 'react-bootstrap';
+//import { Grid, Row, Col } from 'react-bootstrap';
 
 class AppComponent extends Component {
   constructor(props) {
@@ -46,23 +37,22 @@ class AppComponent extends Component {
   }
 
   getChildContext() {
-    return {muiTheme: getMuiTheme(baseTheme)};
+    return {muiTheme: getMuiTheme(baseTheme)
+    };
 
   }
+
   handleToggle = () => this.setState({open: !this.state.open});
 
   handleClose = () => this.setState({open: false});
 
   handleTouchTapLeftIconButton = () => this.setState({open: !this.state.open});
 
-
-
-
   render() {
     return (
       <div>
 
-
+        <Header />
         <AppBar
           onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
           />
@@ -72,26 +62,12 @@ class AppComponent extends Component {
           docked={false}
           >
           <List>
-            <ListItem  leftIcon={<AdminIcon />} onTouchTap={this.handleClose}>
-              <Link to={`/administration`}>
-              <b>Administration</b>
+            <ListItem  leftIcon={<ActionHome />} onTouchTap={this.handleClose}>
+              <Link to={`/home/dashboard`}>
+              <b>Home</b>
               </Link>
             </ListItem>
-            <ListItem leftIcon={<DataIcon />} onTouchTap={this.handleClose}>
-              <Link to={`/content`}>
-                <b>Content</b>
-              </Link>
-            </ListItem>
-            <ListItem  leftIcon={<ContentIcon />} onTouchTap={this.handleClose}>
-              <Link to={`/data`}>
-                <b>Data</b>
-              </Link>
-            </ListItem>
-            <ListItem leftIcon={<AnalysisIcon />} onTouchTap={this.handleClose}>
-              <Link to={`/analysis`}>
-                <b>Analysis</b>
-              </Link>
-            </ListItem>
+
 
           </List>
 
@@ -100,6 +76,7 @@ class AppComponent extends Component {
         </Drawer>
 
               {this.props.children}
+
 
       </div>
     );

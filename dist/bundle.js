@@ -27624,55 +27624,15 @@
 	
 	var _Index2 = _interopRequireDefault(_Index);
 	
-	var _DataMain = __webpack_require__(282);
+	var _HomeDashboard = __webpack_require__(802);
 	
-	var _DataMain2 = _interopRequireDefault(_DataMain);
+	var _HomeDashboard2 = _interopRequireDefault(_HomeDashboard);
 	
-	var _AnalysisMain = __webpack_require__(559);
+	var _HomeAudit = __webpack_require__(803);
 	
-	var _AnalysisMain2 = _interopRequireDefault(_AnalysisMain);
+	var _HomeAudit2 = _interopRequireDefault(_HomeAudit);
 	
-	var _AnalysisQuery = __webpack_require__(561);
-	
-	var _AnalysisQuery2 = _interopRequireDefault(_AnalysisQuery);
-	
-	var _AnalysisVisualizations = __webpack_require__(562);
-	
-	var _AnalysisVisualizations2 = _interopRequireDefault(_AnalysisVisualizations);
-	
-	var _DataManage = __webpack_require__(563);
-	
-	var _DataManage2 = _interopRequireDefault(_DataManage);
-	
-	var _DataSubmit = __webpack_require__(564);
-	
-	var _DataSubmit2 = _interopRequireDefault(_DataSubmit);
-	
-	var _ContentMain = __webpack_require__(756);
-	
-	var _ContentMain2 = _interopRequireDefault(_ContentMain);
-	
-	var _ContentSubmit = __webpack_require__(758);
-	
-	var _ContentSubmit2 = _interopRequireDefault(_ContentSubmit);
-	
-	var _ContentManage = __webpack_require__(759);
-	
-	var _ContentManage2 = _interopRequireDefault(_ContentManage);
-	
-	var _AdminAccounts = __webpack_require__(760);
-	
-	var _AdminAccounts2 = _interopRequireDefault(_AdminAccounts);
-	
-	var _AdminAudit = __webpack_require__(762);
-	
-	var _AdminAudit2 = _interopRequireDefault(_AdminAudit);
-	
-	var _AdminMain = __webpack_require__(763);
-	
-	var _AdminMain2 = _interopRequireDefault(_AdminMain);
-	
-	var _App = __webpack_require__(764);
+	var _App = __webpack_require__(760);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -27691,18 +27651,8 @@
 	        _reactRouter.Route,
 	        { path: '/', component: _App2.default },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Index2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/analysis', component: _AnalysisMain2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/analysis/query', component: _AnalysisQuery2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/analysis/visualizations', component: _AnalysisVisualizations2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/data', component: _DataMain2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/data/manage', component: _DataManage2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/data/submit', component: _DataSubmit2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/administration', component: _AdminMain2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/admininstration/accounts', component: _AdminAccounts2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/admininstration/audit', component: _AdminAudit2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/content', component: _ContentMain2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/content/submit', component: _ContentSubmit2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/content/manage', component: _ContentManage2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/home/dashboard', component: _HomeDashboard2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/home/audit', component: _HomeAudit2.default })
 	      )
 	    );
 	  }
@@ -28560,67 +28510,7 @@
 
 
 /***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _DataNav = __webpack_require__(558);
-	
-	var _DataNav2 = _interopRequireDefault(_DataNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class DataMainComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_DataNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Data Main Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = DataMainComponent;
-
-/***/ },
+/* 282 */,
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -48375,471 +48265,13 @@
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
 
 /***/ },
-/* 558 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class DataNavComponent extends _react.Component {
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.ListGroup,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/data` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Home'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/data/submit` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Submit'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/data/manage` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Manage'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = DataNavComponent;
-
-/***/ },
-/* 559 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AnalysisNav = __webpack_require__(560);
-	
-	var _AnalysisNav2 = _interopRequireDefault(_AnalysisNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AnalysisMainComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AnalysisNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Analysis Main Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AnalysisMainComponent;
-
-/***/ },
-/* 560 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AnalysisNavComponent extends _react.Component {
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.ListGroup,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/analysis` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Home'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/analysis/query` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Queries'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/analysis/visualizations` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Visualizations'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AnalysisNavComponent;
-
-/***/ },
-/* 561 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AnalysisNav = __webpack_require__(560);
-	
-	var _AnalysisNav2 = _interopRequireDefault(_AnalysisNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AnalysisQueryComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AnalysisNav2.default, null)
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 9 })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        ' Analysis Query Component'
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AnalysisQueryComponent;
-
-/***/ },
-/* 562 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AnalysisNav = __webpack_require__(560);
-	
-	var _AnalysisNav2 = _interopRequireDefault(_AnalysisNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AnalysisVisualizationsComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AnalysisNav2.default, null)
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 9 })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        ' Analysis Visualizations Component'
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AnalysisVisualizationsComponent;
-
-/***/ },
-/* 563 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _DataNav = __webpack_require__(558);
-	
-	var _DataNav2 = _interopRequireDefault(_DataNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class DataManageComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_DataNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Data Manage Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = DataManageComponent;
-
-/***/ },
-/* 564 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _lightBaseTheme = __webpack_require__(565);
-	
-	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
-	
-	var _getMuiTheme = __webpack_require__(569);
-	
-	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _DataNav = __webpack_require__(558);
-	
-	var _DataNav2 = _interopRequireDefault(_DataNav);
-	
-	var _AppBar = __webpack_require__(692);
-	
-	var _AppBar2 = _interopRequireDefault(_AppBar);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class DataSubmitComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_DataNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(_AppBar2.default, {
-	              title: 'Title',
-	              iconClassNameRight: 'muidocs-icon-navigation-expand-more'
-	            }),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Data Submit Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = DataSubmitComponent;
-
-/***/ },
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
 /* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -60187,256 +59619,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 756 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _ContentNav = __webpack_require__(757);
-	
-	var _ContentNav2 = _interopRequireDefault(_ContentNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class ContentMainComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Col,
-	        { md: 3 },
-	        _react2.default.createElement(_ContentNav2.default, null)
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Col,
-	        { md: 9 },
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          ' Content Main Component'
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = ContentMainComponent;
-
-/***/ },
-/* 757 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class ContentNavComponent extends _react.Component {
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.ListGroup,
-	        { 'margin-left': 0 },
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/content` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Home'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/content/submit` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Submit'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/content/manage` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Manage'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = ContentNavComponent;
-
-/***/ },
-/* 758 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _ContentNav = __webpack_require__(757);
-	
-	var _ContentNav2 = _interopRequireDefault(_ContentNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class ContentSubmitComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_ContentNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Content Submit Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = ContentSubmitComponent;
-
-/***/ },
-/* 759 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _ContentNav = __webpack_require__(757);
-	
-	var _ContentNav2 = _interopRequireDefault(_ContentNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class ContentManageComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_ContentNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Content Manage Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = ContentManageComponent;
-
-/***/ },
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
 /* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -60450,267 +59636,9 @@
 	
 	__webpack_require__(287);
 	
-	var _react = __webpack_require__(38);
+	var _darkBaseTheme = __webpack_require__(761);
 	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AdminNav = __webpack_require__(761);
-	
-	var _AdminNav2 = _interopRequireDefault(_AdminNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AdminAccountsComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AdminNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Admin Accounts Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AdminAccountsComponent;
-
-/***/ },
-/* 761 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AdminNavComponent extends _react.Component {
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.ListGroup,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/administration' },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Home'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/administration/accounts' },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Accounts'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/administration/audit' },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Audit'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AdminNavComponent;
-
-/***/ },
-/* 762 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AdminNav = __webpack_require__(761);
-	
-	var _AdminNav2 = _interopRequireDefault(_AdminNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AdminAuditComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AdminNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Admin Audits Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AdminAuditComponent;
-
-/***/ },
-/* 763 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AdminNav = __webpack_require__(761);
-	
-	var _AdminNav2 = _interopRequireDefault(_AdminNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	class AdminMainComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 3 },
-	            _react2.default.createElement(_AdminNav2.default, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, md: 9 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              ' Admin Main Component'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = AdminMainComponent;
-
-/***/ },
-/* 764 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	__webpack_require__(283);
-	
-	__webpack_require__(287);
-	
-	var _lightBaseTheme = __webpack_require__(565);
-	
-	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
+	var _darkBaseTheme2 = _interopRequireDefault(_darkBaseTheme);
 	
 	var _getMuiTheme = __webpack_require__(569);
 	
@@ -60720,11 +59648,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(765);
-	
-	var _Header2 = _interopRequireDefault(_Header);
-	
-	var _reactTapEventPlugin = __webpack_require__(768);
+	var _reactTapEventPlugin = __webpack_require__(762);
 	
 	var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
 	
@@ -60732,21 +59656,25 @@
 	
 	var _AppBar2 = _interopRequireDefault(_AppBar);
 	
-	var _Drawer = __webpack_require__(774);
+	var _Drawer = __webpack_require__(768);
 	
 	var _Drawer2 = _interopRequireDefault(_Drawer);
 	
-	var _MenuItem = __webpack_require__(783);
+	var _MenuItem = __webpack_require__(777);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _RaisedButton = __webpack_require__(800);
+	var _RaisedButton = __webpack_require__(794);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _reactBootstrap = __webpack_require__(294);
-	
 	var _reactRouter = __webpack_require__(209);
+	
+	var _List = __webpack_require__(796);
+	
+	var _home = __webpack_require__(807);
+	
+	var _home2 = _interopRequireDefault(_home);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -60754,6 +59682,9 @@
 	// http://stackoverflow.com/a/34015469/988941
 	(0, _reactTapEventPlugin2.default)();
 	
+	//import { Grid, Row, Col } from 'react-bootstrap';
+	
+	//import Header from './Header';
 	class AppComponent extends _react.Component {
 	  constructor(props) {
 	    super(props);
@@ -60772,14 +59703,15 @@
 	  }
 	
 	  getChildContext() {
-	    return { muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default) };
+	    return { muiTheme: (0, _getMuiTheme2.default)(_darkBaseTheme2.default)
+	    };
 	  }
-	
 	
 	  render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement(Header, null),
 	      _react2.default.createElement(_AppBar2.default, {
 	        onLeftIconButtonTouchTap: this.handleTouchTapLeftIconButton
 	      }),
@@ -60790,67 +59722,18 @@
 	          docked: false
 	        },
 	        _react2.default.createElement(
-	          _MenuItem2.default,
-	          { onTouchTap: this.handleClose },
-	          ' '
-	        ),
-	        _react2.default.createElement(
-	          _MenuItem2.default,
-	          { onTouchTap: this.handleClose },
-	          ' >Menu Item 2'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroup,
+	          _List.List,
 	          null,
 	          _react2.default.createElement(
-	            _reactBootstrap.ListGroupItem,
-	            { onTouchTap: this.handleClose },
+	            _List.ListItem,
+	            { leftIcon: _react2.default.createElement(_home2.default, null), onTouchTap: this.handleClose },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: `/administration` },
+	              { to: `/home/dashboard` },
 	              _react2.default.createElement(
-	                'h4',
+	                'b',
 	                null,
-	                'Administration'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroupItem,
-	            { onTouchTap: this.handleClose },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: `/content` },
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Content'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroupItem,
-	            { onTouchTap: this.handleClose },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: `/data` },
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Data'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroupItem,
-	            { onTouchTap: this.handleClose },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: `/analysis` },
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                'Analysis'
+	                'Home'
 	              )
 	            )
 	          )
@@ -60867,7 +59750,7 @@
 	exports.default = AppComponent;
 
 /***/ },
-/* 765 */
+/* 761 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60876,249 +59759,43 @@
 	  value: true
 	});
 	
-	var _react = __webpack_require__(38);
+	var _colors = __webpack_require__(566);
 	
-	var _react2 = _interopRequireDefault(_react);
+	var _colorManipulator = __webpack_require__(567);
 	
-	var _reactRouter = __webpack_require__(209);
+	var _spacing = __webpack_require__(568);
 	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _AppBar = __webpack_require__(692);
-	
-	var _AppBar2 = _interopRequireDefault(_AppBar);
-	
-	var _AuthActions = __webpack_require__(766);
-	
-	var _AuthActions2 = _interopRequireDefault(_AuthActions);
-	
-	var _AuthStore = __webpack_require__(274);
-	
-	var _AuthStore2 = _interopRequireDefault(_AuthStore);
-	
-	var _MainNav = __webpack_require__(767);
-	
-	var _MainNav2 = _interopRequireDefault(_MainNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	//replacing bootstrap compnents with material
-	class HeaderComponent extends _react.Component {
-	
-	  constructor() {
-	    super();
-	    this.state = {
-	      authenticated: _AuthStore2.default.isAuthenticated()
-	    };
-	    this.login = this.login.bind(this);
-	    this.logout = this.logout.bind(this);
-	  }
-	
-	  handleSelect(eventKey) {
-	    event.preventDefault();
-	    alert(`selected ${ eventKey }`);
-	  }
-	
-	  login() {
-	    // We can call the show method from Auth0Lock,
-	    // which is passed down as a prop, to allow
-	    // the user to log in
-	    this.props.lock.show((err, profile, token) => {
-	      if (err) {
-	        alert(err);
-	        return;
-	      }
-	      // If login is successful, we want to dispatch
-	      // the logUserIn action so we can have the profile
-	      // and token set in local storage
-	      _AuthActions2.default.logUserIn(profile, token);
-	      // We also want to set the authentication state
-	      // for the component to true
-	      this.setState({ authenticated: true });
-	    });
-	  }
-	
-	  logout() {
-	    _AuthActions2.default.logUserOut();
-	    this.setState({ authenticated: false });
-	  }
-	
-	  render() {
-	    return _react2.default.createElement(
-	      _reactBootstrap.Navbar,
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Navbar.Header,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Navbar.Brand,
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: '#' },
-	            'Brainsights'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Nav,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.NavDropdown,
-	          { eventKey: '4', title: 'Dropdown', id: 'nav-dropdown' },
-	          _react2.default.createElement(_MainNav2.default, null)
-	        ),
-	        !this.state.authenticated ? _react2.default.createElement(
-	          _reactBootstrap.NavItem,
-	          { onClick: this.login },
-	          'Login'
-	        ) : _react2.default.createElement(
-	          _reactBootstrap.NavItem,
-	          { onClick: this.logout },
-	          'Logout'
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = HeaderComponent;
-
-/***/ },
-/* 766 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _AppDispatcher = __webpack_require__(275);
-	
-	var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
-	
-	var _AuthConstants = __webpack_require__(279);
-	
-	var _AuthConstants2 = _interopRequireDefault(_AuthConstants);
+	var _spacing2 = _interopRequireDefault(_spacing);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = {
-	
-	  logUserIn: (profile, token) => {
-	    _AppDispatcher2.default.dispatch({
-	      actionType: _AuthConstants2.default.LOGIN_USER,
-	      profile: profile,
-	      token: token
-	    });
-	  },
-	
-	  logUserOut: () => {
-	    _AppDispatcher2.default.dispatch({
-	      actionType: _AuthConstants2.default.LOGOUT_USER
-	    });
+	  spacing: _spacing2.default,
+	  fontFamily: 'Roboto, sans-serif',
+	  palette: {
+	    primary1Color: _colors.cyan700,
+	    primary2Color: _colors.cyan700,
+	    primary3Color: _colors.grey600,
+	    accent1Color: _colors.pinkA200,
+	    accent2Color: _colors.pinkA400,
+	    accent3Color: _colors.pinkA100,
+	    textColor: _colors.fullWhite,
+	    secondaryTextColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.7),
+	    alternateTextColor: '#303030',
+	    canvasColor: '#303030',
+	    borderColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.3),
+	    disabledColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.3),
+	    pickerHeaderColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.12),
+	    clockCircleColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.12)
 	  }
-	
 	};
 
 /***/ },
-/* 767 */
+/* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(38);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(294);
-	
-	var _reactRouter = __webpack_require__(209);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// We'll use this function to get a contact
-	
-	class MainNavComponent extends _react.Component {
-	
-	  render() {
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.ListGroup,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/administration` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Administration'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/content` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Content'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/data` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Data'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ListGroupItem,
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: `/analysis` },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Analysis'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}
-	
-	exports.default = MainNavComponent;
-
-/***/ },
-/* 768 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(769);
-	var defaultClickRejectionStrategy = __webpack_require__(770);
+	/* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(763);
+	var defaultClickRejectionStrategy = __webpack_require__(764);
 	
 	var alreadyInjected = false;
 	
@@ -61140,14 +59817,14 @@
 	  alreadyInjected = true;
 	
 	  __webpack_require__(80).injection.injectEventPluginsByName({
-	    'TapEventPlugin':       __webpack_require__(771)(shouldRejectClick)
+	    'TapEventPlugin':       __webpack_require__(765)(shouldRejectClick)
 	  });
 	};
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 769 */
+/* 763 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -61202,7 +59879,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 770 */
+/* 764 */
 /***/ function(module, exports) {
 
 	module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -61213,7 +59890,7 @@
 
 
 /***/ },
-/* 771 */
+/* 765 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -61241,10 +59918,10 @@
 	var EventPluginUtils = __webpack_require__(82);
 	var EventPropagators = __webpack_require__(79);
 	var SyntheticUIEvent = __webpack_require__(113);
-	var TouchEventUtils = __webpack_require__(772);
+	var TouchEventUtils = __webpack_require__(766);
 	var ViewportMetrics = __webpack_require__(114);
 	
-	var keyOf = __webpack_require__(773);
+	var keyOf = __webpack_require__(767);
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
 	var isStartish = EventPluginUtils.isStartish;
@@ -61389,7 +60066,7 @@
 
 
 /***/ },
-/* 772 */
+/* 766 */
 /***/ function(module, exports) {
 
 	/**
@@ -61437,7 +60114,7 @@
 
 
 /***/ },
-/* 773 */
+/* 767 */
 /***/ function(module, exports) {
 
 	/**
@@ -61477,7 +60154,7 @@
 	module.exports = keyOf;
 
 /***/ },
-/* 774 */
+/* 768 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61487,7 +60164,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Drawer = __webpack_require__(775);
+	var _Drawer = __webpack_require__(769);
 	
 	var _Drawer2 = _interopRequireDefault(_Drawer);
 	
@@ -61496,7 +60173,7 @@
 	exports.default = _Drawer2.default;
 
 /***/ },
-/* 775 */
+/* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -61537,7 +60214,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _reactEventListener = __webpack_require__(776);
+	var _reactEventListener = __webpack_require__(770);
 	
 	var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 	
@@ -61553,7 +60230,7 @@
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _Overlay = __webpack_require__(781);
+	var _Overlay = __webpack_require__(775);
 	
 	var _Overlay2 = _interopRequireDefault(_Overlay);
 	
@@ -61962,7 +60639,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 776 */
+/* 770 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -62005,7 +60682,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactAddonsShallowCompare = __webpack_require__(777);
+	var _reactAddonsShallowCompare = __webpack_require__(771);
 	
 	var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
 	
@@ -62013,7 +60690,7 @@
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
-	var _supports = __webpack_require__(779);
+	var _supports = __webpack_require__(773);
 	
 	var supports = _interopRequireWildcard(_supports);
 	
@@ -62175,13 +60852,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 777 */
+/* 771 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(778);
+	module.exports = __webpack_require__(772);
 
 /***/ },
-/* 778 */
+/* 772 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62211,7 +60888,7 @@
 	module.exports = shallowCompare;
 
 /***/ },
-/* 779 */
+/* 773 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62221,7 +60898,7 @@
 	});
 	exports.passiveOption = exports.detachEvent = exports.attachEvent = exports.removeEventListener = exports.addEventListener = exports.canUseDOM = undefined;
 	
-	var _defineProperty = __webpack_require__(780);
+	var _defineProperty = __webpack_require__(774);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -62264,7 +60941,7 @@
 	}();
 
 /***/ },
-/* 780 */
+/* 774 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62288,7 +60965,7 @@
 	}
 
 /***/ },
-/* 781 */
+/* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -62337,7 +61014,7 @@
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _AutoLockScrolling = __webpack_require__(782);
+	var _AutoLockScrolling = __webpack_require__(776);
 	
 	var _AutoLockScrolling2 = _interopRequireDefault(_AutoLockScrolling);
 	
@@ -62434,7 +61111,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 782 */
+/* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -62560,7 +61237,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 783 */
+/* 777 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62570,7 +61247,7 @@
 	});
 	exports.default = undefined;
 	
-	var _MenuItem = __webpack_require__(784);
+	var _MenuItem = __webpack_require__(778);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -62579,7 +61256,7 @@
 	exports.default = _MenuItem2.default;
 
 /***/ },
-/* 784 */
+/* 778 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -62632,19 +61309,19 @@
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _Popover = __webpack_require__(785);
+	var _Popover = __webpack_require__(779);
 	
 	var _Popover2 = _interopRequireDefault(_Popover);
 	
-	var _check = __webpack_require__(789);
+	var _check = __webpack_require__(783);
 	
 	var _check2 = _interopRequireDefault(_check);
 	
-	var _ListItem = __webpack_require__(790);
+	var _ListItem = __webpack_require__(784);
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _Menu = __webpack_require__(797);
+	var _Menu = __webpack_require__(791);
 	
 	var _Menu2 = _interopRequireDefault(_Menu);
 	
@@ -62960,7 +61637,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 785 */
+/* 779 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -63009,11 +61686,11 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _reactEventListener = __webpack_require__(776);
+	var _reactEventListener = __webpack_require__(770);
 	
 	var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 	
-	var _RenderToLayer = __webpack_require__(786);
+	var _RenderToLayer = __webpack_require__(780);
 	
 	var _RenderToLayer2 = _interopRequireDefault(_RenderToLayer);
 	
@@ -63025,11 +61702,11 @@
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
-	var _lodash = __webpack_require__(787);
+	var _lodash = __webpack_require__(781);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _PopoverAnimationDefault = __webpack_require__(788);
+	var _PopoverAnimationDefault = __webpack_require__(782);
 	
 	var _PopoverAnimationDefault2 = _interopRequireDefault(_PopoverAnimationDefault);
 	
@@ -63455,7 +62132,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 786 */
+/* 780 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -63640,7 +62317,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 787 */
+/* 781 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -64086,7 +62763,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 788 */
+/* 782 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -64260,7 +62937,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 789 */
+/* 783 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64297,7 +62974,7 @@
 	exports.default = NavigationCheck;
 
 /***/ },
-/* 790 */
+/* 784 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -64364,15 +63041,15 @@
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _expandLess = __webpack_require__(791);
+	var _expandLess = __webpack_require__(785);
 	
 	var _expandLess2 = _interopRequireDefault(_expandLess);
 	
-	var _expandMore = __webpack_require__(792);
+	var _expandMore = __webpack_require__(786);
 	
 	var _expandMore2 = _interopRequireDefault(_expandMore);
 	
-	var _NestedList = __webpack_require__(793);
+	var _NestedList = __webpack_require__(787);
 	
 	var _NestedList2 = _interopRequireDefault(_NestedList);
 	
@@ -64991,7 +63668,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 791 */
+/* 785 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65028,7 +63705,7 @@
 	exports.default = NavigationExpandLess;
 
 /***/ },
-/* 792 */
+/* 786 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65065,7 +63742,7 @@
 	exports.default = NavigationExpandMore;
 
 /***/ },
-/* 793 */
+/* 787 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -65078,7 +63755,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _List = __webpack_require__(794);
+	var _List = __webpack_require__(788);
 	
 	var _List2 = _interopRequireDefault(_List);
 	
@@ -65120,7 +63797,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 794 */
+/* 788 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -65165,7 +63842,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Subheader = __webpack_require__(795);
+	var _Subheader = __webpack_require__(789);
 	
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 	
@@ -65232,7 +63909,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 795 */
+/* 789 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65242,7 +63919,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Subheader = __webpack_require__(796);
+	var _Subheader = __webpack_require__(790);
 	
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 	
@@ -65251,7 +63928,7 @@
 	exports.default = _Subheader2.default;
 
 /***/ },
-/* 796 */
+/* 790 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -65336,7 +64013,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 797 */
+/* 791 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -65393,7 +64070,7 @@
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _ClickAwayListener = __webpack_require__(798);
+	var _ClickAwayListener = __webpack_require__(792);
 	
 	var _ClickAwayListener2 = _interopRequireDefault(_ClickAwayListener);
 	
@@ -65405,11 +64082,11 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _List = __webpack_require__(794);
+	var _List = __webpack_require__(788);
 	
 	var _List2 = _interopRequireDefault(_List);
 	
-	var _menuUtils = __webpack_require__(799);
+	var _menuUtils = __webpack_require__(793);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -65950,7 +64627,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 798 */
+/* 792 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -66081,7 +64758,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ },
-/* 799 */
+/* 793 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66125,7 +64802,7 @@
 	}();
 
 /***/ },
-/* 800 */
+/* 794 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66135,7 +64812,7 @@
 	});
 	exports.default = undefined;
 	
-	var _RaisedButton = __webpack_require__(801);
+	var _RaisedButton = __webpack_require__(795);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -66144,7 +64821,7 @@
 	exports.default = _RaisedButton2.default;
 
 /***/ },
-/* 801 */
+/* 795 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -66622,6 +65299,538 @@
 	} : void 0;
 	exports.default = RaisedButton;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
+
+/***/ },
+/* 796 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = exports.makeSelectable = exports.ListItem = exports.List = undefined;
+	
+	var _List2 = __webpack_require__(788);
+	
+	var _List3 = _interopRequireDefault(_List2);
+	
+	var _ListItem2 = __webpack_require__(784);
+	
+	var _ListItem3 = _interopRequireDefault(_ListItem2);
+	
+	var _makeSelectable2 = __webpack_require__(797);
+	
+	var _makeSelectable3 = _interopRequireDefault(_makeSelectable2);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.List = _List3.default;
+	exports.ListItem = _ListItem3.default;
+	exports.makeSelectable = _makeSelectable3.default;
+	exports.default = _List3.default;
+
+/***/ },
+/* 797 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.makeSelectable = undefined;
+	
+	var _extends2 = __webpack_require__(694);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(699);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _getPrototypeOf = __webpack_require__(700);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(691);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(703);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(707);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(708);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _simpleAssign = __webpack_require__(716);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _colorManipulator = __webpack_require__(567);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var makeSelectable = exports.makeSelectable = function makeSelectable(MyComponent) {
+	  var _class, _temp2;
+	
+	  return _temp2 = _class = function (_Component) {
+	    (0, _inherits3.default)(_class, _Component);
+	
+	    function _class() {
+	      var _ref;
+	
+	      var _temp, _this, _ret;
+	
+	      (0, _classCallCheck3.default)(this, _class);
+	
+	      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	        args[_key] = arguments[_key];
+	      }
+	
+	      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = _class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call.apply(_ref, [this].concat(args))), _this), _this.hasSelectedDescendant = function (previousValue, child) {
+	        if (_react2.default.isValidElement(child) && child.props.nestedItems && child.props.nestedItems.length > 0) {
+	          return child.props.nestedItems.reduce(_this.hasSelectedDescendant, previousValue);
+	        }
+	        return previousValue || _this.isChildSelected(child, _this.props);
+	      }, _this.handleItemTouchTap = function (event, item) {
+	        var itemValue = item.props.value;
+	
+	        if (itemValue !== _this.props.value) {
+	          _this.props.onChange(event, itemValue);
+	        }
+	      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	    }
+	
+	    (0, _createClass3.default)(_class, [{
+	      key: 'extendChild',
+	      value: function extendChild(child, styles, selectedItemStyle) {
+	        var _this2 = this;
+	
+	        if (child && child.type && child.type.muiName === 'ListItem') {
+	          var selected = this.isChildSelected(child, this.props);
+	          var selectedChildrenStyles = void 0;
+	          if (selected) {
+	            selectedChildrenStyles = (0, _simpleAssign2.default)({}, styles, selectedItemStyle);
+	          }
+	
+	          var mergedChildrenStyles = (0, _simpleAssign2.default)({}, child.props.style, selectedChildrenStyles);
+	
+	          this.keyIndex += 1;
+	
+	          return _react2.default.cloneElement(child, {
+	            onTouchTap: function onTouchTap(event) {
+	              _this2.handleItemTouchTap(event, child);
+	              if (child.props.onTouchTap) {
+	                child.props.onTouchTap(event);
+	              }
+	            },
+	            key: this.keyIndex,
+	            style: mergedChildrenStyles,
+	            nestedItems: child.props.nestedItems.map(function (child) {
+	              return _this2.extendChild(child, styles, selectedItemStyle);
+	            }),
+	            initiallyOpen: this.isInitiallyOpen(child)
+	          });
+	        } else {
+	          return child;
+	        }
+	      }
+	    }, {
+	      key: 'isInitiallyOpen',
+	      value: function isInitiallyOpen(child) {
+	        if (child.props.initiallyOpen) {
+	          return child.props.initiallyOpen;
+	        }
+	        return this.hasSelectedDescendant(false, child);
+	      }
+	    }, {
+	      key: 'isChildSelected',
+	      value: function isChildSelected(child, props) {
+	        return props.value === child.props.value;
+	      }
+	    }, {
+	      key: 'render',
+	      value: function render() {
+	        var _this3 = this;
+	
+	        var _props = this.props;
+	        var children = _props.children;
+	        var selectedItemStyle = _props.selectedItemStyle;
+	        var other = (0, _objectWithoutProperties3.default)(_props, ['children', 'selectedItemStyle']);
+	
+	
+	        this.keyIndex = 0;
+	        var styles = {};
+	
+	        if (!selectedItemStyle) {
+	          var textColor = this.context.muiTheme.baseTheme.palette.textColor;
+	          styles.backgroundColor = (0, _colorManipulator.fade)(textColor, 0.2);
+	        }
+	
+	        return _react2.default.createElement(
+	          MyComponent,
+	          (0, _extends3.default)({}, other, this.state),
+	          _react.Children.map(children, function (child) {
+	            return _this3.extendChild(child, styles, selectedItemStyle);
+	          })
+	        );
+	      }
+	    }]);
+	    return _class;
+	  }(_react.Component), _class.propTypes = {
+	    children: _react.PropTypes.node,
+	    onChange: _react.PropTypes.func,
+	    selectedItemStyle: _react.PropTypes.object,
+	    value: _react.PropTypes.any
+	  }, _class.contextTypes = {
+	    muiTheme: _react.PropTypes.object.isRequired
+	  }, _temp2;
+	};
+	
+	exports.default = makeSelectable;
+
+/***/ },
+/* 798 */,
+/* 799 */,
+/* 800 */,
+/* 801 */,
+/* 802 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	__webpack_require__(283);
+	
+	__webpack_require__(287);
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(294);
+	
+	var _HomeNav = __webpack_require__(804);
+	
+	var _HomeNav2 = _interopRequireDefault(_HomeNav);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	class HomeDashboardComponent extends _react.Component {
+	
+	  render() {
+	
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { xs: 12, md: 3,
+	          style: { padding: '0 px 0 px 0 px',
+	            paddingLeft: '0px',
+	            margin: '0 auto'
+	          }
+	        },
+	        _react2.default.createElement(_HomeNav2.default, null)
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { xs: 12, md: 9 },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Dashboard'
+	        )
+	      )
+	    );
+	  }
+	}
+	
+	exports.default = HomeDashboardComponent;
+
+/***/ },
+/* 803 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	__webpack_require__(283);
+	
+	__webpack_require__(287);
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(294);
+	
+	var _HomeNav = __webpack_require__(804);
+	
+	var _HomeNav2 = _interopRequireDefault(_HomeNav);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	class HomeAuditComponent extends _react.Component {
+	
+	  render() {
+	
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { xs: 12, md: 3,
+	          style: { padding: '0 px 0 px 0 px',
+	            paddingLeft: '0px',
+	            margin: '0 auto'
+	          }
+	        },
+	        _react2.default.createElement(_HomeNav2.default, null)
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { xs: 12, md: 9 },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Audit'
+	        )
+	      )
+	    );
+	  }
+	}
+	
+	exports.default = HomeAuditComponent;
+
+/***/ },
+/* 804 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _List = __webpack_require__(796);
+	
+	var _reactRouter = __webpack_require__(209);
+	
+	var _Divider = __webpack_require__(805);
+	
+	var _Divider2 = _interopRequireDefault(_Divider);
+	
+	var _Subheader = __webpack_require__(789);
+	
+	var _Subheader2 = _interopRequireDefault(_Subheader);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	class HomeNavComponent extends _react.Component {
+	
+	  render() {
+	
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        _List.List,
+	        null,
+	        _react2.default.createElement(
+	          _List.ListItem,
+	          null,
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Home'
+	          )
+	        ),
+	        _react2.default.createElement(_Divider2.default, null),
+	        _react2.default.createElement(
+	          _List.ListItem,
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: `/home/dashboard` },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Dashboard'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _List.ListItem,
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: `/home/audit` },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Audit'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	}
+	
+	exports.default = HomeNavComponent;
+
+/***/ },
+/* 805 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _Divider = __webpack_require__(806);
+	
+	var _Divider2 = _interopRequireDefault(_Divider);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _Divider2.default;
+
+/***/ },
+/* 806 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends2 = __webpack_require__(694);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(699);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _simpleAssign = __webpack_require__(716);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Divider = function Divider(props, context) {
+	  var inset = props.inset;
+	  var style = props.style;
+	  var other = (0, _objectWithoutProperties3.default)(props, ['inset', 'style']);
+	  var _context$muiTheme = context.muiTheme;
+	  var baseTheme = _context$muiTheme.baseTheme;
+	  var prepareStyles = _context$muiTheme.prepareStyles;
+	
+	
+	  var styles = {
+	    root: {
+	      margin: 0,
+	      marginTop: -1,
+	      marginLeft: inset ? 72 : 0,
+	      height: 1,
+	      border: 'none',
+	      backgroundColor: baseTheme.palette.borderColor
+	    }
+	  };
+	
+	  return _react2.default.createElement('hr', (0, _extends3.default)({}, other, { style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }));
+	};
+	
+	Divider.muiName = 'Divider';
+	
+	process.env.NODE_ENV !== "production" ? Divider.propTypes = {
+	  /**
+	   * If true, the `Divider` will be indented.
+	   */
+	  inset: _react.PropTypes.bool,
+	  /**
+	   * Override the inline-styles of the root element.
+	   */
+	  style: _react.PropTypes.object
+	} : void 0;
+	
+	Divider.defaultProps = {
+	  inset: false
+	};
+	
+	Divider.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	
+	exports.default = Divider;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
+
+/***/ },
+/* 807 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(38);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _pure = __webpack_require__(743);
+	
+	var _pure2 = _interopRequireDefault(_pure);
+	
+	var _SvgIcon = __webpack_require__(752);
+	
+	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ActionHome = function ActionHome(props) {
+	  return _react2.default.createElement(
+	    _SvgIcon2.default,
+	    props,
+	    _react2.default.createElement('path', { d: 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' })
+	  );
+	};
+	ActionHome = (0, _pure2.default)(ActionHome);
+	ActionHome.displayName = 'ActionHome';
+	ActionHome.muiName = 'SvgIcon';
+	
+	exports.default = ActionHome;
 
 /***/ }
 /******/ ]);
