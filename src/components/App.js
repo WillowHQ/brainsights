@@ -19,6 +19,13 @@ import { Link } from 'react-router';
 import {List, ListItem} from 'material-ui/List';
 import ActionHome from 'material-ui/svg-icons/action/home';
 
+import Header from './Header';
+
+import AuthActions from '../actions/AuthActions';
+import AuthStore from '../stores/AuthStore';
+
+
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -52,9 +59,10 @@ class AppComponent extends Component {
     return (
       <div>
 
-        <Header />
+
         <AppBar
           onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
+          iconElementRight={<Header lock={this.lock}></Header>}
           />
 
         <Drawer

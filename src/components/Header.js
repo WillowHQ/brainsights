@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Header, Brand } from 'react-bootstrap';
+import { NavItem } from 'react-bootstrap';
 
 //replacing bootstrap compnents with material
 import AppBar from 'material-ui/AppBar';
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
-import MainNav from './MainNav';
+
 
 class HeaderComponent extends Component {
 
@@ -50,33 +50,17 @@ class HeaderComponent extends Component {
 
   render() {
     return (
-      <Navbar>
+      <div>
 
-        <Navbar.Header>
-
-          <Navbar.Brand>
-            <a href="#">Brainsights</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
-            <MainNav />
-
-          </NavDropdown>
-
-          { !this.state.authenticated ? (
-            <NavItem onClick={this.login}>Login</NavItem>
-          ) : (
-            <NavItem onClick={this.logout}>Logout</NavItem>
-          )}
-
-
-
-
-        </Nav>
-      </Navbar>
+        { !this.state.authenticated ? (
+          <NavItem onClick={this.login}>Login</NavItem>
+        ) : (
+          <NavItem onClick={this.logout}>Logout</NavItem>
+        )}
+      </div>
 
     );
+
   }
 }
 
