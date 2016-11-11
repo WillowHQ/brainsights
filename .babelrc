@@ -1,5 +1,5 @@
 {
-  "presets": ["eslatest-node6", "react"],
+  "presets": ["eslatest-node6", "react", "stage-1"],
   "plugins": [
     "transform-async-to-generator",
     "syntax-async-functions"
