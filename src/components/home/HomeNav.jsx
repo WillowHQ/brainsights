@@ -3,6 +3,7 @@ import { List, ListItem } from 'material-ui/List';
 import { Link } from 'react-router';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
+import ActionHome from 'material-ui/svg-icons/action/home';
 
 class HomeNavComponent extends Component {
 
@@ -12,14 +13,14 @@ class HomeNavComponent extends Component {
       <div >
 
         <List>
-        <ListItem><h1>Home</h1></ListItem>
+        <ListItem primaryText="Home" leftIcon={<ActionHome />}> </ListItem>
         <Divider />
-          <ListItem><Link to={`/home/dashboard`}>
-            <h4>Dashboard</h4>
+          <ListItem primaryText="Dashboard"><Link to={`/home/dashboard`}>
+
           </Link></ListItem>
 
-          <ListItem><Link to={`/home/audit`}>
-            <h4>Audit</h4>
+          <ListItem primaryText="Audit"><Link to={`/home/audit`}>
+
           </Link></ListItem>
         </List>
       </div>

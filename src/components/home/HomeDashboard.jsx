@@ -17,6 +17,7 @@ class HomeDashboardComponent extends Component {
 
     return (
       <div>
+
         <Col xs={12} md={3}
           style={{padding: '0 px 0 px 0 px',
           paddingLeft: '0px',
