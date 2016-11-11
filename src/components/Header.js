@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { NavItem } from 'react-bootstrap';
 
+
+
 //replacing bootstrap compnents with material
 import AppBar from 'material-ui/AppBar';
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
+
+import FlatButton from 'material-ui/FlatButton';
 
 
 class HeaderComponent extends Component {
@@ -53,9 +57,9 @@ class HeaderComponent extends Component {
       <div>
 
         { !this.state.authenticated ? (
-          <NavItem onClick={this.login}>Login</NavItem>
+          <FlatButton label="Login" onClick={this.login} />
         ) : (
-          <NavItem onClick={this.logout}>Logout</NavItem>
+          <FlatButton label="Logout" onClick={this.logout} />
         )}
       </div>
 
