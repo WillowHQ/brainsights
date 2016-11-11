@@ -4,6 +4,13 @@ import { Link } from 'react-router';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 
+
+const style = {
+  list: {
+    padding:'0 0 0'
+  }
+}
+
 class HomeNavComponent extends Component {
 
   render() {
@@ -11,17 +18,19 @@ class HomeNavComponent extends Component {
     return (
       <div >
 
-        <List>
-        <ListItem><h1>Home</h1></ListItem>
-        <Divider />
-          <ListItem><Link to={`/home/dashboard`}>
-            <h4>Dashboard</h4>
-          </Link></ListItem>
+        <List style={style.list}>
+          <ListItem primaryText="Home"></ListItem>
+          <Divider />
+            <ListItem><Link to={`/home/dashboard`}>
+              {"Dashboard"}
+            </Link></ListItem>
 
-          <ListItem><Link to={`/home/audit`}>
-            <h4>Audit</h4>
-          </Link></ListItem>
+            <ListItem> <Link to={'/home/audit'}>
+            {"Audit"}
+            </Link></ListItem>
+
         </List>
+
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import React, { Component } from 'react';
@@ -23,6 +23,8 @@ import Header from './Header';
 
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
+
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
 
 
@@ -49,7 +51,9 @@ class AppComponent extends Component {
 
   }
 
-  handleToggle = () => this.setState({open: !this.state.open});
+  handleToggle = () => {
+    this.setState({open: !this.state.open});
+  }
 
   handleClose = () => this.setState({open: false});
 
