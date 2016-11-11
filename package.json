@@ -11,7 +11,8 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "serve": "node server.js",
     "start": "node server/index.js",
-    "deploy": "gcloud app deploy app.yaml"
+    "deploy": "gcloud app deploy app.yaml",
+
   },
   "engines": {
     "node": "~=6.9.1"

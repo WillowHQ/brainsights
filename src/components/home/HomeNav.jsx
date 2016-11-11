@@ -3,12 +3,16 @@ import { List, ListItem } from 'material-ui/List';
 import { Link } from 'react-router';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import ActionGrade from 'material-ui/svg-icons/action/grade';
+import ContentSend from 'material-ui/svg-icons/content/send';
+import ContentDrafts from 'material-ui/svg-icons/content/drafts';
+import Divider from 'material-ui/Divider';
+import ActionInfo from 'material-ui/svg-icons/action/info';
 
 
 const style = {
-  list: {
-    padding:'0 0 0'
-  }
+
 }
 
 class HomeNavComponent extends Component {
@@ -17,19 +21,15 @@ class HomeNavComponent extends Component {
 
     return (
       <div >
+        <List>
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+      <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
+      <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
+      <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+    </List>
 
-        <List style={style.list}>
-          <ListItem primaryText="Home"></ListItem>
-          <Divider />
-            <ListItem><Link to={`/home/dashboard`}>
-              {"Dashboard"}
-            </Link></ListItem>
 
-            <ListItem> <Link to={'/home/audit'}>
-            {"Audit"}
-            </Link></ListItem>
-
-        </List>
 
       </div>
     );

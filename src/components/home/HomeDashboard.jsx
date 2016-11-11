@@ -8,7 +8,7 @@ import HomeNav from './HomeNav';
 
 
 const style = {
-  paper: {
+  sideNav: {
     display: 'inline-block',
     float: 'left',
     margin: '0px 0px 0px 0',
@@ -35,7 +35,7 @@ class HomeDashboardComponent extends Component {
 
     return (
       <div>
-        <Paper style={style.paper}>
+        <Paper style={style.sideNav}>
           <HomeNav />
         </Paper>
         <Paper style={style.paper2}>
