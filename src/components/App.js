@@ -1,8 +1,9 @@
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import React, { Component } from 'react';
 //import Header from './Header';
@@ -28,12 +29,13 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
 
 
+
+
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-
-//import { Grid, Row, Col } from 'react-bootstrap';
 
 class AppComponent extends Component {
   constructor(props) {
@@ -61,31 +63,31 @@ class AppComponent extends Component {
     return (
       <div>
 
+          <AppBar
+            onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
+            iconElementRight={<Header lock={this.lock}></Header>}
 
-        <AppBar
-          onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton}
-          iconElementRight={<Header lock={this.lock}></Header>}
-          />
+            />
 
-        <Drawer
-          open={this.state.open}
-          docked={false}
-          >
-          <List>
-            <ListItem  leftIcon={<ActionHome />} onTouchTap={this.handleClose}>
-              <Link to={`/home/dashboard`}>
-              <b>Home</b>
-              </Link>
-            </ListItem>
-
-
-          </List>
+          <Drawer
+            open={this.state.open}
+            docked={false}
+            >
+            <List>
+              <ListItem  leftIcon={<ActionHome />} onTouchTap={this.handleClose}>
+                <Link to={`/home/dashboard`}>
+                <b>Home</b>
+                </Link>
+              </ListItem>
 
 
+            </List>
 
-        </Drawer>
 
-              {this.props.children}
+
+          </Drawer>
+
+                {this.props.children}
 
 
       </div>

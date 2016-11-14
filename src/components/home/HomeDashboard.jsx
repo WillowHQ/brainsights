@@ -1,10 +1,11 @@
-import 'normalize.css/normalize.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import React, { Component } from 'react';
 
 import Paper from 'material-ui/Paper';
 import HomeNav from './HomeNav';
+import HomeNav1 from './HomeNav1';
+
 
 
 const style = {
@@ -36,7 +37,7 @@ class HomeDashboardComponent extends Component {
     return (
       <div>
         <Paper style={style.paper}>
-          <HomeNav />
+          <HomeNav1/>
         </Paper>
         <Paper style={style.paper2}>
           <p> Dashboard</p>
