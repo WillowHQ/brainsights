@@ -1,7 +1,7 @@
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -24,6 +24,8 @@ import Header from './Header';
 
 import AuthActions from '../actions/AuthActions';
 import AuthStore from '../stores/AuthStore';
+
+import baseTheme from '../styles/brainsightsTheme';
 
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
